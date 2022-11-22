@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:rgb(35, 173, 40)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Bondora Risk Analysis</h2>
+            <h3>NewCreditCustomer</h3><br><select name="NewCreditCustomer" id="first" required="required">
+                <option value="TRUE">TRUE</option>
+                <option value="FALSE">FALSE</option>
+            </select>
+
+            <h3>VerificationType</h3><br><select name="VerificationType" id="second" required="required">
+                <option value=0>0</option>
+                <option value=1.0>1.0</option>                
+                
+                <option value=2.0>2.0</option>
+                <option value=3.0>3.0</option>                
+                <option value=4.0>4.0</option>
+                
+            </select>
+
+            <h3>LanguageCode 1 Estonian 2 English 3 Russian 4 Finnish 5 German 6 Spanish 9 Slovakian</h3><br><select name="LanguageCode" id="third" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>                
+                <option value=7>7</option>
+                
+            </select>
+
+            <h3>Gender 0 Male 1 Woman 2 Undefined</h3><br><select name="Gender" id="forth" required="required">
+                <option value=0>0</option>
+                <option value=1.0>1.0</option>                
+                
+                <option value=2.0>2.0</option>
+
+            </select>
+
+            <h3>Education 	1 Primary 2 Basic 3 Vocational 4 Secondary 5 Higher </h3><br><select name="Education" id="fifth" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=20>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>
+
+            </select>
+
+            <h3>MaritalStatus 1 Married 2 Cohabitant 3 Single 4 Divorced 5 Widow</h3><br><select name="MaritalStatus" id="sixth" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>
+
+            </select>
+
+            <h3>EmploymentStatus 1 Unemployed 2 Partially employed 3 Fully employed 4 Self-employed 5 Entrepreneur 6 Retiree</h3><br><select name="EmploymentStatus" id="seventh" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>
+
+            </select>
+
+            <h3>EmploymentDurationCurrentEmployer</h3><br><select name="EmploymentDurationCurrentEmployer" id="eirth" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>                
+                <option value=7>7</option>                
+                <option value=8>8</option>
+                <option value=9>9</option>
+
+            </select>
+
+            <h3>OccupationArea 
+                OccupationArea	1 Other 2 Mining 3 Processing 4 Energy 5 Utilities 6 Construction 7 Retail and wholesale 8 Transport and warehousing 9 Hospitality and catering 10 Info and telecom 11 Finance and insurance 12 Real-estate 13 Research 14 Administrative 15 Civil service & military 16 Education </h3><br><select name="OccupationArea" id="ninth" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>                
+                <option value=7>7</option>                
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <option value=11>11</option>                
+                <option value=12>12</option>                
+                <option value=13>13</option>
+                <option value=14>14</option>                
+                <option value=15>15</option>                
+                <option value=16>16</option>                
+               
+
+
+            </select>
+
+            <h3>Restructured</h3><br><select name="Restructured" id="tenth" required="required">
+                <option value="TRUE">TRUE</option>
+                <option value="FALSE">FALSE</option>
+            </select>
+
+            <h3>CreditScoreEsMicroL</h3><br><select name="CreditScoreEsMicroL" id="eleven" required="required">
+                <option value=0>0</option>
+                <option value=1>1</option>                
+                
+                <option value=2>2</option>
+                <option value=3>3</option>                
+                <option value=4>4</option>                
+                <option value=5>5</option>
+                <option value=6>6</option>                
+                <option value=7>7</option>                
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <option value=11>11</option>
+            </select>                
+
+            <h3>Age of the customer</h3><input id="third" name= 'Age' required= 'required'>
+            <h3>Applied Amount</h3><input id="third" name= 'AppliedAmount' required= 'required'>
+            <h3>Interest amount</h3><input id="third" name= 'Interest' required= 'required'>
+            <h3>Duration of loan</h3><input id="third" name= 'LoanDuration' required= 'required'>
+            <h3>Total income</h3><input id="third" name= 'IncomeTotal' required= 'required'>
+            <h3>Total Liabilities</h3><input id="third" name= 'LiabilitiesTotal' required= 'required'>
+            <h3>Amount of previous loan before loan</h3><input id="third" name= 'AmountOfPreviousLoansBeforeLoan' required= 'required'>
+            <br><br><button id="sub" type = 'submit'> Calculate the Status</button>
+            <br>           
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: rgb(194, 204, 214);
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            background-color: coral;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        } #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        } #seventh {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        } #eirht {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        } #ninth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        } #tenth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }        
+         #eleven {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
