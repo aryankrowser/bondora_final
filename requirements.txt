@@ -9,7 +9,6 @@ joblib==1.2.0
 jsonify==0.5
 kiwisolver==1.4.4
 matplotlib==3.6.2
-mkl-service==2.4.0
 numpy==1.23.5
 patsy==0.5.2
 Pillow==9.3.0
