@@ -10,7 +10,6 @@ numpy==1.23.5
 pandas==1.5.1
 Pillow==9.3.0
 pytz==2022.6
-pywin32==302
 seaborn==0.12.1
 sklearn==0.0.post1
 webencodings==0.5.1
