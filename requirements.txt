@@ -23,4 +23,4 @@ urllib3==1.26.12
 webencodings==0.5.1
 Werkzeug==2.2.2
 wincertstore==0.2
-
+guinvorn==20.1.0
